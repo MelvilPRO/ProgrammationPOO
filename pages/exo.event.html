@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Event</title>
+  <link rel="stylesheet" href="../assets/style/general.css">
+  <link rel="stylesheet" href="../assets/style/event.exo.css">
+</head>
+<body>
+  <article class="corps">
+    <header>
+      <a href="../index.html">Accueil</a>
+      <h1>Event</h1>
+    </header>
+    <section>
+      <header>
+        <h2>Exercice 1 : Nombre de clic</h2>
+      </header>
+      <p>
+        <ul>
+          <li>Sélectionnez le bouton d'identifiant #clic</li>
+          <li>Ecoutez l'événement <strong>click</strong></li>
+          <li>A chaque click inscrivez dans la console le nombre de clic réalisé</li>
+          <li>Indiquez dans la span #iterateur le nombre de click réalisé</li>
+        </ul>
+      </p>
+      <div class="correction" id="correcExo1">
+        <div class="text-muted">
+          Correction Exercice 1
+        </div>
+        <button class="btn btn-outline-success" id="clic">Click</button> <br>
+        Nombre de clic : <span id="iterateur"></span>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Exercice 2 : Formulaire d'accueil</h2>
+      </header>
+      <p>
+        <em>La propriété permettant d'accéder au contenu d'un formulaire est monInput<strong>.value</strong>.</em>
+        <ul>
+          <li>Ecoutez l'événement clic sur l'envoie du bouton #sendForm</li>
+          <li>Selectionnez les valeurs saisies dans le formulaire aux champs #nom - #prenom - #ddn</li>
+          <li>
+            Sélectionnez le contenant des résultats #resultat
+          </li>
+          <li>Affichez ce contenant en enlevant la classe invisible</li>
+          <li>Sélectionnez puis affichez les valeurs récupérer dans les champs du formulaire dans les span d'identifiants #resNom - #resPrenom - #resAge en calculant l'âge</li>
+        </ul>
+      </p>
+      <div class="correction" id="correcExo2">
+        <div class="text-muted">
+          Correction Exercice 2
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="nom">Nom</label><br>
+              <input type="text" id="nom" class="form-control">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="prenom">Prénom</label><br>
+              <input type="text" id="prenom" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="ddn">Date de naissance</label><br>
+              <input type="date" id="ddn" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center"><button class="btn btn-outline-success" id="sendForm">Envoyer</button></div>
+          </div>
+        </div>
+        <div id="resultat" class="invisible">
+          Nom : <span id="resNom"></span> <br>
+          Prénom: <span id="resPrenom"></span> <br>
+          Age : <span id="resAge"></span>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Carré qui bouge</h2>
+      </header>
+      <em>Pour écouter les événements liés aux touches du clavier on va écouter l'événement <strong>keydown</strong> sur l'ensemble du document.</em> <br>
+      <p>
+        <ul>
+          <li>
+            Sélecctionnez le carré noir d'identifiant sqMvt
+          </li>
+          <li>A la manière de l'exemple du cours, écoutez l'événement keydown des touches haut, bas, gauche et droite afin de déplacer le carré noir</li>
+          <li>Lorsque le carré noir touche une des limites du container changez sa couleur en rouge (maVariable.style.backgroundColor = 'red') et empêcher la sortie du carré (quand il ne touche plus il redevient noir)</li>
+        </ul>
+      </p>
+      <div class="correction" id="correcExo3">
+        <div class="text-muted">
+          Correction Exercice 3
+        </div>
+        <div id="containerMvt">
+          <div id="sqMvt"></div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Exercice 4 : Les couleurs</h2>
+      </header>
+      <article>
+        <header>
+          <h3>Partie 1 : Aléatoire</h3>
+        </header>
+        <em>Nombre aléatoire : <strong>Math.floor(Math.random() * 256)</strong></em>
+        <p>
+          <ul>
+            <li>Sélectionnez les champs du formulaire #affichRed - #affichGreen - #affichBlue</li>
+          </ul>
+          <li>Ecoutez l'événement clic du bouton d'identifiant #clicColor (changer)</li>
+          <li>Générez 3 nombres aléatoires compris entre 0 et 255 inclus</li>
+          <li>Placez ces chiffres dans les différents champs du formulaire</li>
+          <li>Changez le style de #containerColor pour prendre en compte les 3 nombres (maVariable.style.backgroundColor = 'rgb(' + nb1 + ',' + nb2 + ',' + nb3 + ')' )</li>
+
+        </p>
+      </article>
+      <article>
+        <header>
+          <h3>Partie 2 : Formulaire</h3>
+        </header>
+        <p>
+          <ul>
+            <li>Ecoutez l'événement clic du bouton valider d'identifiant #formColor</li>
+            <li>Récupérez les valeurs contenus dans les champs</li>
+            <li>Grâce à ces valeurs modifiez la couleur du fond de #containerColor</li>
+          </ul>
+        </p>
+      </article>
+      <div class="correction" id="correcExo4">
+        <div class="text-muted">
+          Correction Exercice 4
+        </div>
+        <div id="containerColor">
+          <label for="affichRed">Red</label><input type="number" id="affichRed" min="0" max="255">
+          <label for="affichGreen">Green</label><input type="number" id="affichGreen" min="0" max="255">
+          <label for="affichBlue">Blue</label><input type="number" id="affichBlue" min="0" max="255">
+        </div>
+        <br>
+        <div class="text-center">
+          <button class="btn btn-outline-success" id="clicColor">Changer</button>
+          <button class="btn btn-outline-warning" id="formColor">Valider</button>
+          <div id="error" class="invisible">
+            Erreur de saisie
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Exercice 5 : Accordéon</h2>
+      </header>
+      <p>
+        <ul>
+          <li>Selectionnez les éléments suivants : #titre1 - #titre2 - #titre3 correspondant aux titres / #contenu1 - #contenu2 - #contenu3</li>
+          <li>Ecoutez l'événément clic pour chacun des éléments d'identifiants titre</li>
+          <li>Lorsque cet événement est déclenché ajoutez la classe invisible aux élément d'identifiants contenu ne la possédant pas et enelvez la même classe au contenu du mêem nombre que le titre</li>
+        </ul>
+      </p>
+      <div class="correction" id="correcExo5">
+        <div class="text-muted">
+          Correction exercice 5
+        </div>
+        <div class="titre" id="titre1">
+          <h1>Titre 1</h1>
+        </div>
+        <div class="contenu" id="contenu1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum necessitatibus error similique esse blanditiis culpa ipsam ducimus tempore! Odio tempora eius soluta dolores quia eum ducimus quam tenetur voluptates. Ullam.</div>
+        <div class="titre" id="titre2">
+          <h1>Titre 2</h1>
+        </div>
+        <div class="contenu invisible" id="contenu2">Quo quia consequuntur aliquam rem delectus, non placeat, sit sequi blanditiis qui magnam deserunt dicta soluta tenetur nemo ut, rerum assumenda neque dolores ducimus ullam pariatur magni! Quaerat, mollitia et!</div>
+        <div class="titre" id="titre3">
+          <h1>Titre 3</h1>
+        </div>
+        <div class="contenu invisible" id="contenu3">Alias iusto nostrum esse facilis nisi vel in culpa tenetur voluptatum? Natus et optio molestiae ut! Totam perspiciatis modi repellendus optio enim similique, sapiente doloremque quis culpa et nam quia?</div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Pour aller plus loin</h2>
+      </header>
+      <p>
+        <ul>
+          <li>Réalisez l'exercice <strong>La bibliothèque de liens</strong> en utilisant un formulaire et un bouton d'envoi permettant d'ajotuer dynamiquement grâce à l'événement <strong>clic</strong> un nouveau lien</li>
+          <li>Modifiez le résultat de l'exercice <strong>personnages célèbres</strong> en créant un bouton pour chaque personnage permettant de changer son statut en ligne et adaptez le style en fonction</li>
+          <li>Modifiez l'exercice <strong>Factorielle</strong> en ajoutant un formulaire plutôt que le prompt pour cacluer à loisir la factorielle du nombre saisie</li>
+        </ul>
+      </p>
+    </section>
+  </article>
+  <script src="../assets/script/event/exo1.js"></script>
+  <script src="../assets/script/event/exo2.js"></script>
+  <script src="../assets/script/event/exo3.js"></script>
+  <script src="../assets/script/event/exo4.js"></script>
+  <script src="../assets/script/event/exo5.js"></script>
+</body>
+</html>

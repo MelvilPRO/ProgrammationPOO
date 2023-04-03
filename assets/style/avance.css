@@ -1,0 +1,15 @@
+p {
+  text-align: justify;
+}
+
+.img {
+  text-align: center;
+}
+
+.correction {
+  margin: 20px auto;
+  border: 1px solid;
+  width: 80%;
+  min-width: 500px;
+  min-height: 200px;
+}

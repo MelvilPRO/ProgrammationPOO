@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style/general.css">
+  <link rel="stylesheet" href="../assets/style/classes.css">
+  <title>Classes</title>
+  <script type="module" src="../assets/script/classes/exo1.js"></script>
+  <script type="module" src="../assets/script/classes/exo2.js"></script>
+</head>
+<body>
+  <article class="corps">
+    <header>
+      <a href="../index.html">Accueil</a>
+      <h1>Les classes</h1>
+    </header>
+    <section>
+      <header>
+        <h2>Exercice 1 Le carré</h2>
+      </header>
+      <p>
+        Créer la classe Carré qui permettra de contenir l'ensemble de ses propriétés privées et méthodes. <br>
+        <h3>Les propriétés</h3>
+        <ul>
+          <li>la couleur de fond</li>
+          <li>La taille minimum et maximum (entre 10 et 50 pixels)</li>
+          <li>Le container qui accueillera notre nouveau carré</li>
+          <li>Une classe qui sera par défaut square</li>
+        </ul>
+        <em>On utilisera l'astuce vu en cours, débuter les propriétés avec '#' ou '_'</em>
+        <h3>Les Accesseurs et Mutateurs</h3>
+        Chaque propriété aura ses propres accesseurs et mutateurs. Pour certains d'entre eux des vérifications seront nécessaires. En cas de dépassement de la taille, vous devrait modifier la propriété à la borne la plus proche. <br>
+        Exemple : si un nouveau carré devait être créé à 60px on le bloque à 50
+        <h3>Le constructeur</h3>
+        Il permettra de créer et de positionner le nouvau carré dans le container disponible. Pensez à utiliser les mutateurs dans votre contrusteur !
+        <h3>Les méthodes</h3>
+        Vous devrez créer deux méthodes, la première permettra de déplacer le carré de manière horizontale et la seconde verticale.
+        <br>
+        <em>Pour cet exercice, le template contient déjà un container avec un identifiant vous permettant d'accueillir les nouveaux carrés !</em> <br>
+        <em>Il sera peut être nécessaire de créer une propriété 'dom' privé qui n'aura pas d'accesseurs ni de mutateurs afin de bouger notre carré</em>
+        <br> <br>
+        Une fois la classe construite, créez 3 carrés différents en terme de taille et de couleur puis déplacer en un horizontalement et un autre verticalement avec les méthodes que vous aurez créées.
+      </p>
+      <div id="exo1">
+
+      </div>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Exercice 2 : Les élèves</h2>
+      </header>
+      <p>
+        Nous allons maintenant gérer des élèves qui posséderont chacun des notes dans 3 matières. Le but va être de créer la classe élève puis ensuite de parcourir un tableau d'élèves enregistrées afin de les afficher dans le DOM et de calculer leur moyenne.
+      </p>
+      <h3>les propriétés</h3>
+      <p>
+        <ul>
+          <li>Nom</li>
+          <li>Prénom</li>
+          <li>Mathématiques</li>
+          <li>Français</li>
+          <li>Anglais</li>
+          <li>Target : qui sera l'endroit du DOM où on va ajouter notre élève</li>
+        </ul>
+        <em>
+          Pour chaque élève, on aura besoin :
+          <ul>
+            <li>D'une DIV regroupant l'ensemble des informations</li>
+            <li>D'un titre inclut dans cette nouvelle DIV un H3 regroupant nom et prénom</li>
+            <li>Les trois notes les unes en dessous des autres</li>
+            <li>La moyenne</li>
+          </ul>
+        </em>
+      </p>
+      <h3>Les Accesseurs et Mutateurs</h3>
+      <p>
+        Il faudra créer les accesseurs et les mutateurs pour chacune des propriétés (avec vérification ?)
+      </p>
+      <h3>Le constructeur</h3>
+      <p>
+        Il permettra de construire le nouvel objet élève
+      </p>
+      <h3>Les méthodes</h3>
+      <p>
+        <ul>
+          <li>Le calcul de la moyenne</li>
+          <li>La création du template élève et l'ajout dans le DOM</li>
+        </ul>
+      </p>
+      <h3>Consignes supplémentaires</h3>
+      <p>
+        Parcourez le tableau fourni afin d'afficher dans le DOM (section id=exo2) l'ensemble des informations pour chaque étudiants, après avoir créer un nouvel objet en se servant de la classe puis l'ajouter dans un tableau.
+      </p>
+      <div id="exo2"></div>
+    </section>
+  </article>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objets Complexes</title>
+  <link rel="stylesheet" href="../assets/style/general.css">
+  <link rel="stylesheet" href="../assets/style/objets.complees.css">
+</head>
+<body>
+  <article class="corps">
+    <header>
+      <a href="../index.html">Accueil</a>
+      <h1>Objets Complexes</h1>
+    </header>
+    <section>
+      <header>
+        <h2>Utilisateurs : Partie 1</h2>
+      </header>
+      <p>
+        Réaliser cette première partie en n'utilisant pas le constructeur.
+        <ul>
+          <li>
+            Créer le script d'un objet utilisateur possédant les caractéristiques suivantes :
+          <ul>
+            <li>Nom</li>
+            <li>Prénom</li>
+            <li>Date de naissance</li>
+            <li>Mot de passe</li>
+            <li>Diplômes (tableau) <em>['BAC', 'DUT']</em></li>
+            <li>Exepériences utilisateurs (tableau)</li>
+            <li>Hobby (tableau)</li>
+            <li>Codeur (booleen)</li>
+            <li>Compte github</li>
+          </ul>
+          </li>
+          <li>
+            Créer ensuite les méthodes permettant :
+            <ul>
+              <li>d'afficher les diplomes de l'utilisateur</li>
+              <li>d'afficher les expériences de l'utilisateur</li>
+              <li>d'afficher un message d'accueil personnalisé</li>
+              <li>de calculer son âge automatiquement</li>
+              <li>de comparer une saisie utilisateur avec le mot de passe enregistré (le paramètre sera la saisie) qui renvoie true or false</li>
+            </ul>
+          </li>
+          <li>
+            Tester les différentes méthodes et affichage de vos propriétés grâce à un console log
+          </li>
+        </ul>
+      </p>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Utilisateurs : Partie 2</h2>
+      </header>
+      <p>
+        Utilisez l'objet que vous venez de créer pour répondre aux questions. Utiliser le HTML et les sélecteurs proposés afin de
+        <ul>
+          <li>Permettre l'identification (utilisation des méthodes)</li>
+          <li>Si l'identification est bonne, j'affiche les caractéristiques de l'utilisateur
+            <ul>
+              <li>Nom</li>
+              <li>Prénom</li>
+              <li>Je calcule son âge</li>
+              <li>J'affiche son compte Github si il en a un</li>
+              <li>J'affiche ses diplômes / expériences / hobby</li>
+            </ul>
+          </li>
+          <li>Si l'identification n'est pas bonne j'affiche la div identification fausse</li>
+        </ul>
+      </p>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Utilisateurs : Partie 3</h2>
+      </header>
+      <p>
+        J'utilise le cours et les notions de constructeurs afin de créer plusieurs utilisateurs et de pouvoir comparer les différents affichages de données
+      </p>
+      <p>
+        <ul>
+          <li>div contenant l'exercice : #exo1</li>
+          <li>div contenant le formulaire : #form</li>
+          <li>champ nom : #nom</li>
+          <li>champ password : #pwd</li>
+          <li>bouton d'envoie : #login</li>
+          <li>Bloc de réponse (invisible au démarrage) #reponse</li>
+          <li>bloc de réponse nom : #nomR</li>
+          <li>bloc de réponse prénom : #prenom</li>
+          <li>bloc de réponse age : #age</li>
+          <li>bloc de réponse git : #git</li>
+          <li>Liste des diplomes (créations de li à prévoir) : #diploma</li>
+          <li>Liste des expériences (créations de li à prévoir) : #experiences</li>
+          <li>Liste des hobby (créations de li à prévoir) #hobby</li>
+          <li>Bloc contenant l'erreur d'identification (bloc logique + setTmeout à prévoir) : #wrong</li>
+        </ul>
+      </p>
+    </section>
+    <section>
+      <header>
+        <h2>Formulaire</h2>
+      </header>
+      <div id="exo1">
+        <div id="form">
+          <div>
+            <label for="nom">Nom</label><br>
+            <input type="text" name="nom" id="nom">
+          </div>
+          <br>
+          <div>
+            <label for="pwd">Password</label><br>
+            <input type="password" name="pwd" id="pwd">
+          </div>
+        </div>
+        <div id="button">
+          <button id="login">Login</button>
+        </div>
+        <div id="reponse">
+          Nom : <span id="nomR"></span><br>
+          Prénom : <span id="prenom"></span> <br>
+          Age : <span id="age"></span> <br>
+          GitHub: <span id="git"></span> <br>
+          Diplômes : <br>
+          <ul id="diploma"></ul> <br>
+          Expériences : <br>
+          <ul id="experiences"></ul> <br>
+          Hobby : <br>
+          <ul id="hobby"></ul>
+        </div>
+        <div id="wrong">
+          Erreur dans l'identification
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Diaporama : Partie 1</h2>
+      </header>
+      <p>
+        On se retrouve dans le contexte d'un diaporama qu'on veut gérer grâce à Javascript. Dans cette première partie, on va créer les fonctions et l'objet qui nous permettra de gérer un diaporama simple.
+        <ul>
+          <li>
+            Créez un objet qui contiendra les caractéristiques suivantes
+            <ul>
+              <li>La cible dans le DOM</li>
+              <li>Le tableau contenant les adresses des images</li>
+              <li>la durée de transition d'une image à l'autre</li>
+              <li>L'indice de l'image visible</li>
+              <li>la méthode qui va permettre de changer l'image affiché</li>
+            </ul>
+          </li>
+        </ul>
+        Les éléments sont à créer dans la div #partie1
+      </p>
+      <div id="partie1"></div>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Diaporama : Partie 2</h2>
+      </header>
+      <p>
+        Cette fois-ci, en conservant ce qui a été réalisé dans la première partie, on va écrire le script du constructeur permettant de créer des objets diaporama.
+        <ul>
+          <li>Créez le constructeur Diaporama</li>
+          <li>Initialisez 2 diapos différents</li>
+          <li>Utilisez les selecteurs disponible et le DOM afin d'ajouter dynamiquement ces deux diaporamas (pas les mêmes images ni la même durée)</li>
+        </ul>
+        <em>Modifiez les propriétés des deux éléments créés en vous inspirant du CSS fournit avec le template</em>
+      </p>
+      Les éléments sont à créer dans la div #partie2
+      <div id="partie2">
+      </div>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Mes fameux objets</h2>
+      </header>
+      <p>
+        Lors de l'une des premières séances, vous avez construit des objets possédant des caractéristiques. Réalisez le script des constructeurs permettant de créer des objets des types que vous avez choisis
+      </p>
+    </section>
+    <hr>
+    <section>
+      <header>
+        <h2>Pour aller plus loin</h2>
+      </header>
+      <p>
+        Reprenez les exercices des précédents cours afin de créer des objets complexes. Vous pouvez par exemple appliquer vos connaissances sur :
+        <ul>
+          <li>La partie de 421 (JS est logique)</li>
+          <li>Calcul de salaire (JS est logique)</li>
+          <li>L'accordéon (Event)</li>
+        </ul>
+      </p>
+    </section>
+  </article>
+  <script src="../assets/script/objetscomplexes/exo1.partie1.js"></script>
+  <script src="../assets/script/objetscomplexes/exo1.partie2.js"></script>
+  <script src="../assets/script/objetscomplexes/exo1.partie3.js"></script>
+  <script src="../assets/script/objetscomplexes/exo2.partie1.js"></script>
+  <script src="../assets/script/objetscomplexes/exo2.partie2.js"></script>
+</body>
+</html>

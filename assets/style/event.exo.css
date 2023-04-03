@@ -1,0 +1,79 @@
+.correction {
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 10px;
+}
+
+img {
+  height: 330px;
+}
+
+.row {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.invisible {
+  display: none;
+}
+
+#containerMvt {
+  width: 400px;
+  height: 400px;
+  border: 1px dotted black;
+  margin: auto;
+  position: relative;
+}
+
+#sqMvt {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+}
+
+.toucher {
+  background-color: red !important;
+}
+
+#containerColor {
+  height: 500px;
+  width: 60%;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+
+#containerColor input {
+  margin-right: 15px;
+}
+
+#error {
+  color: red;
+  font-style: italic;
+}
+
+/* ----------- Exo 5 ---------------- */
+.titre {
+  border:1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.titre h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contenu {
+  height: 200px;
+  overflow: auto;
+  text-align: justify;
+  border: 1px solid black;
+  padding: 10px;
+}

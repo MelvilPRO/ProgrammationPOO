@@ -1,0 +1,39 @@
+.blue {
+  background-color: cyan;
+}
+
+#exemple1 {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  border: 1px dotted coral;
+  margin-bottom: 20px;
+}
+
+#listPorno {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+  display: none;
+}
+
+#space {
+  height: 100vh;
+}
+
+#sky {
+  background-image: url(../img/etoiles.jfif);
+  height: 400px;
+  width: 700px;
+  margin: auto;
+  position: relative;
+}
+
+#spacecraft {
+  width: 80px;
+  position: absolute;
+  bottom: 40px;
+  left:310px;
+}

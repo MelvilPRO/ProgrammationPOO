@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fonctions avancées</title>
+  <link rel="stylesheet" href="../assets/style/general.css">
+  <link rel="stylesheet" href="../assets/style/avance.css">
+</head>
+<body>
+  <main class="corps">
+    <header>
+      <a href="../index.html">Accueil</a>
+      <h1>Fonctions avancées</h1>
+    </header>
+    <article>
+      <header>
+        <h2>Exercice 1 : Entreprises</h2>
+      </header>
+      <section>
+        Cette exercice, va nous permettre de visualiser le concept de polymorphisme, classe abstraite et interface.
+        <ul>
+          <li>Créez le script de la "classe abstraite" Personne qui contiendra :
+            <ul>
+              <li>Un nom</li>
+              <li>Un prénom</li>
+              <li>Une date de naissance</li>
+              <li>Le nombre de congé restant</li>
+              <li>salaire</li>
+              <li>La présence d'un salarié (true / false)</li>
+              <li>Une méthode polymorphique définie qui permettra d'afficher dans la console l'ensemble des propriétés</li>
+              <li>Une méthode polymorphique vide qui permet le calcul du salaire</li>
+            </ul>
+          </li>
+          <li>Créez le script des classes suivantes héritant de Personne : (champs spécifiques entre parenthèses)
+            <ul>
+              <li>Employé : (intitulé du poste, type de contrat)</li>
+              <li>Chef: (numéro de l'équipe qu'il dirige, nom du service)</li>
+            </ul>
+          </li>
+          <li>Créez un tableau contenant 2 équipes de 3 employés qui possdent donc chacun en plus un chef de service</li>
+          <li>Imaginez sous forme d'un pseudo-code le script de l'interface qui permettrait la gestion du comportement Congé (en précisant les variables impliquées)</li>
+          <li>Affichez dans la page WEB l'ensemble du tableau par équipe</li>
+        </ul>
+      </section>
+      <section class="correction" id="exo1">
+
+      </section>
+    </article>
+    <hr>
+    <article>
+      <header>
+        <h2>Exercice 2 : Football</h2>
+      </header>
+      <section>
+        <ul>
+          <li>Créez le script de la "classe abstraite" joueur possédant les caractéristiques suivantes :
+            <ul>
+              <li>Nom</li>
+              <li>Prénom</li>
+              <li>Date de naissance</li>
+              <li>Pied Fort</li>
+              <li>Nationalité</li>
+              <li>Equipe</li>
+              <li>Méthode polymorphique Afficher pour afficher l'ensemble des informations</li>
+            </ul>
+          </li>
+          <li>En partant de ces informations, créées autant de classes filles que nécessaires héritant de Joeur en relation avec le poste au sein de l'équipe. Chacune devra contenir des caractéristiques qui lui sont propre</li>
+          <li>Imaginez en pseudo-code une interface permettant de définir le comportement "jeux" qui pourrait contenir (entre autre) une méthode passe (le gardien et les joueurs n'ont pas les possibilités de passes - avec ou sans les mains )</li>
+          <li>Créez plusieurs instances de joueurs et affichez les dans la page HTML</li>
+        </ul>
+      </section>
+      <section class="correction" id="exo2">
+      </section>
+    </article>
+    <hr>
+    <article>
+      <header>
+        <h2>Exercice 3 : Votre POO</h2>
+      </header>
+      <section>
+        Au début de ce module de POO, chacun d'entre vous a défini des objets possédant des caractéristiques et des actions communes. Utilisez cette recherche et vos connaissances afin de créer les classes (abstraite, héritage, polymorphisme) et imaginez en pseudo-code l'implémentation d'un comportement grâce aux interfaces.
+      </section>
+      <section class="correction"></section>
+    </article>
+  </main>
+  <script type="module" src="../assets/script/avance/avance.exo1.js"></script>
+  <script src="../assets/script/avance/avance.exo2.js"></script>
+</body>
+</html>
